@@ -1,4 +1,7 @@
 # ReverseShell
+
+(System Details : 32 bit architecture, AT&T syntax, Linux)
+
 Reverse Shell- In systems where a firewall in place blocks incoming remote connection requests, organisations support establishing remote connections from the system to the outside world. 
 
 Attackers make use of this functionality to fail the protection provided by firewall.
